@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# Run the test script
+echo "Running test script..."
+make all
+# Test case 1: Missing options
+echo "Test Case 1: No options"
+./chat
+echo "-------------------------------------"
+
+# Test case 2: Help option
+echo "Test Case 2: Help option"
+./chat -h
+echo "-------------------------------------"
+
+# Test case 3: Missing -s option
+echo "Test Case 3: Missing -s option"
+./chat -p 8080
+echo "-------------------------------------"
+
+# Test case 4: Missing -p option
+echo "Test Case 4: Missing -p option"
+./chat -s example_server
+echo "-------------------------------------"
+
+# Test case 5: Valid options
+echo "Test Case 5: Valid options"
+./chat -p 8080 -s example_server
+echo "-------------------------------------"
+
+# Test case 6: Valid options
+echo "Test Case 5: Valid options"
+./chat -s example_server -p 8080 
+echo "-------------------------------------"
+
+
