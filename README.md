@@ -73,18 +73,3 @@ To facilitate testing with other teams' clients and servers, follow these packet
 
 The version is always 457, the string length represents the message length in bytes, and the message follows immediately afterward. Ensure proper byte order (Big-Endian) for packets sent over the network.
 
-## Grading
-
-- No credit is given for code that fails to compile on the department's Linux machines.
-- 10%: Accept input flags in any order and perform sanity checks.
-- 10%: Display an error and prompt for a new message if the message exceeds 140 characters.
-- 10%: Properly use network-to-host and host-to-network conversions.
-- 10%: Ensure your program works with another team's randomly chosen client and server.
-- 50%: Pass send/receive test cases.
-- 10%: Output formatting should match the provided example.
-
-## Points and Submission
-
-This project is worth 100 points, and it contributes to 10% of your total grade. To submit your assignment:
-
-- Turn in your assignment by submitting a tarball (GroupName) on CANVAS. Ensure that the files are at the root of the archive and not in any folders. GTAs will evaluate the project using the provided makefile.
